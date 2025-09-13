@@ -8,3 +8,6 @@
 
 For use with the Software Engineering club.
 
+<div align="center">
+  <img width="387" height="781" alt="image" src="https://github.com/user-attachments/assets/22147408-44eb-47f4-b8ec-9ba90580ce4d" />
+</div>
