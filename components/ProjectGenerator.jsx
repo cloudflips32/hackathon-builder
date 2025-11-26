@@ -13,111 +13,53 @@ import {
 import { Badge } from "./ui/badge";
 
 const technologies = [
-  "React",
-  "Vue.js",
-  "Angular",
-  "Node.js",
+  // Top 5 Programming Languages
+  "JavaScript",
   "Python",
-  "Flutter",
-  "SwiftUI",
-  "Kotlin",
+  "Java",
   "TypeScript",
-  "Next.js",
-  "Express.js",
-  "FastAPI",
-  "Django",
-  "Ruby on Rails",
-  "Go",
-  "Rust",
-  "WebAssembly",
-  "GraphQL",
-  "MongoDB",
+  "C++",
+  // Top 5 Databases
   "PostgreSQL",
-  "Redis",
-  "Docker",
-  "Kubernetes",
-  "AWS",
+  "MongoDB",
+  "MySQL",
+  "SQLite",
   "Firebase",
-  "Supabase",
-  "Vercel",
-  "TensorFlow",
-  "PyTorch",
-  "OpenAI",
-  "Stripe",
-  "Twilio",
-  "Socket.io",
-  "Three.js",
-  "D3.js",
-  "Chart.js",
-  "Tailwind CSS",
-  "Material-UI",
-  "Chakra UI",
-  "Framer Motion",
-  "GSAP",
+  // Top 10 APIs
+  "PokeAPI",
+  "OpenWeatherMap",
+  "NASA APOD",
+  "REST Countries",
+  "Random User Generator",
+  "The Dog API",
+  "Cat Facts",
+  "JSONPlaceholder",
+  "TMDB",
+  "CoinGecko",
 ];
 
-const nouns = [
-  "Cats",
-  "Dogs",
-  "Coffee",
-  "Pizza",
-  "Books",
-  "Music",
-  "Weather",
-  "Travel",
-  "Photos",
-  "Movies",
-  "Games",
-  "Fitness",
-  "Health",
-  "Food",
-  "Plants",
-  "Cars",
-  "Bikes",
-  "Art",
-  "Fashion",
-  "News",
-  "Sports",
-  "Shopping",
-  "Education",
-  "Productivity",
-  "Social",
-  "Dating",
-  "Finance",
-  "Crypto",
-  "NFTs",
-  "Podcasts",
-  "Meditation",
-  "Sleep",
-  "Recipes",
-  "Gardening",
-  "Pets",
-  "Space",
-  "Ocean",
-  "Mountains",
-  "Cities",
-  "Architecture",
-  "Interior Design",
-  "Photography",
-  "Dancing",
-  "Cooking",
-  "Baking",
-  "Wine",
-  "Beer",
-  "Cocktails",
-  "Startups",
-  "Remote Work",
-  "Freelancing",
-  "Languages",
-  "Translation",
-  "Culture",
-  "History",
-  "Geography",
-  "Science",
-  "Shoes,",
-  "Burgers",
-  "Ice Cream",
-];
+const technologyNouns = {
+  "JavaScript": ["Interactive Dashboard", "Browser Game", "Real-time Chat", "Data Visualization", "Task Manager", "Weather Widget", "Form Validator", "Calculator"],
+  "Python": ["Data Analysis Tool", "Web Scraper", "Automation Script", "Machine Learning Model", "Flask API", "Discord Bot", "Image Processor", "File Organizer"],
+  "Java": ["Android App", "Enterprise System", "Inventory Manager", "Banking System", "Student Record System", "Library Management", "Game Engine", "Desktop Application"],
+  "TypeScript": ["Strictly Typed API", "Large Scale App", "React Component Library", "Next.js Dashboard", "Node.js Backend", "Type-Safe Form", "Refactoring Tool", "CLI Tool"],
+  "C++": ["Game Engine", "System Monitor", "Embedded System", "High-Performance Solver", "Graphics Renderer", "Audio Processor", "Physics Engine", "Operating System Kernel"],
+  "PostgreSQL": ["User Database", "Financial Ledger", "Inventory Catalog", "Employee Directory", "Analytics Store", "Geospatial Data", "Relational Schema", "Transaction Log"],
+  "MongoDB": ["Content Management System", "Social Media Feed", "Product Catalog", "User Profiles", "IoT Data Store", "Real-time Analytics", "Mobile App Backend", "Logging System"],
+  "MySQL": ["eCommerce Platform", "WordPress Plugin", "Forum Database", "Customer CRM", "Booking System", "School Management", "Blog Backend", "Ticket System"],
+  "SQLite": ["Local Cache", "Mobile App Storage", "Embedded Device DB", "Configuration Store", "Browser Extension Data", "Testing Database", "Personal Diary", "To-Do List"],
+  "Firebase": ["Real-time Chat", "Live Leaderboard", "User Authentication", "Push Notifications", "Serverless Function", "Mobile Backend", "Collaborative Editor", "Social Feed"],
+  "PokeAPI": ["Pokedex", "Battle Simulator", "Team Builder", "Pokemon Guessing Game", "Type Calculator", "Evolution Chart", "Move Dex", "Berry Guide"],
+  "OpenWeatherMap": ["Weather Dashboard", "Forecast App", "Travel Planner", "Event Scheduler", "Agriculture Monitor", "Clothing Recommender", "Flight Tracker", "Outdoor Activity Guide"],
+  "NASA APOD": ["Astronomy Gallery", "Space Wallpaper App", "Educational Tool", "Daily Space Fact", "Cosmos Explorer", "Star Map", "Universe Trivia", "Visual Storyteller"],
+  "REST Countries": ["Country Guide", "Flag Quiz", "Travel Visualizer", "Currency Converter", "Geography Learning Tool", "Population Visualizer", "Language Map", "Capital City Game"],
+  "Random User Generator": ["User Directory Mockup", "Contact List", "Profile Card Generator", "Social Network Prototype", "Employee Roster", "Test Data Seeder", "Avatar Gallery", "Identity Generator"],
+  "The Dog API": ["Breed Explorer", "Dog Gallery", "Adoption Matcher", "Puppy Finder", "Random Dog Generator", "Canine Encyclopedia", "Dog Quiz", "Pet Care Guide"],
+  "Cat Facts": ["Daily Cat Fact", "Cat Trivia Game", "Feline Encyclopedia", "Random Fact Widget", "Cat Lover's App", "Educational Quiz", "Fact Sharer", "Meow Messenger"],
+  "JSONPlaceholder": ["Blog Prototype", "Comment System", "Photo Album", "User Dashboard", "Todo List Demo", "Post Feed", "API Testing Tool", "Frontend Mockup"],
+  "TMDB": ["Movie Recommender", "TV Show Tracker", "Actor Database", "Cinema Guide", "Watchlist Manager", "Rating System", "Trailer Viewer", "Genre Explorer"],
+  "CoinGecko": ["Crypto Tracker", "Portfolio Manager", "Price Alert System", "Market Visualizer", "Coin Converter", "Trading Simulator", "Blockchain Explorer", "Historical Data Viewer"]
+};
 
 export default function ProjectGenerator() {
   const [currentProject, setCurrentProject] = useState(null);
@@ -132,8 +74,10 @@ export default function ProjectGenerator() {
         technologies[
           Math.floor(Math.random() * technologies.length)
         ];
+      
+      const techNouns = technologyNouns[randomTech] || ["Project"];
       const randomNoun =
-        nouns[Math.floor(Math.random() * nouns.length)];
+        techNouns[Math.floor(Math.random() * techNouns.length)];
 
       setCurrentProject({
         technology: randomTech,
@@ -230,9 +174,7 @@ export default function ProjectGenerator() {
       {/* Stats */}
       <div className="text-center text-sm text-muted-foreground">
         <p>
-          {technologies.length} technologies × {nouns.length}{" "}
-          topics = {technologies.length * nouns.length} possible
-          combinations
+          {technologies.length} technologies × specialized topics = hundreds of possible combinations
         </p>
       </div>
     </div>
