@@ -39,26 +39,26 @@ const technologies = [
 ];
 
 const technologyNouns = {
-  "JavaScript": ["an Interactive Dashboard", "a Browser Game", "a Real-time Chat", "a Data Visualization", "a Task Manager", "a Weather Widget", "a Form Validator", "a Calculator"],
-  "Python": ["a Data Analysis Tool", "a Web Scraper", "a Automation Script", "a Machine Learning Model", "a Flask API", "a Discord Bot", "a Image Processor", "a File Organizer"],
-  "Java": ["an Android App", "an Enterprise System", "an Inventory Manager", "a Banking System", "a Student Record System", "a Library Management", "a Game Engine", "a Desktop Application"],
-  "TypeScript": ["a Strictly Typed API", "a Large Scale App", "a React Component Library", "a Next.js Dashboard", "a Node.js Backend", "a Type-Safe Form", "a Refactoring Tool", "a CLI Tool"],
-  "C++": ["a Game Engine", "a System Monitor", "an Embedded System", "a High-Performance Solver", "a Graphics Renderer", "a Audio Processor", "a Physics Engine", "a Operating System Kernel"],
-  "PostgreSQL": ["a User Database", "a Financial Ledger", "a Inventory Catalog", "a Employee Directory", "a Analytics Store", "a Geospatial Data", "a Relational Schema", "a Transaction Log"],
-  "MongoDB": ["a Content Management System", "a Social Media Feed", "a Product Catalog", "a User Profiles", "an IoT Data Store", "a Real-time Analytics", "a Mobile App Backend", "a Logging System"],
-  "MySQL": ["an eCommerce Platform", "a WordPress Plugin", "a Forum Database", "a Customer CRM", "a Booking System", "a School Management", "a Blog Backend", "a Ticket System"],
-  "SQLite": ["a Local Cache", "a Mobile App Storage", "an Embedded Device DB", "a Configuration Store", "a Browser Extension Data", "a Testing Database", "a Personal Diary", "a To-Do List"],
-  "Firebase": ["a Real-time Chat", "a Live Leaderboard", "a User Authentication", "Push Notifications", "Serverless Function", "Mobile Backend", "Collaborative Editor", "Social Feed"],
-  "PokeAPI": ["a Pokedex", "a Battle Simulator", "a Team Builder", "a Pokemon Guessing Game", "a Type Calculator", "an Evolution Chart", "a Move Dex", "a Berry Guide"],
-  "OpenWeatherMap": ["a Weather Dashboard", "a Forecast App", "a Travel Planner", "a Event Scheduler", "a Agriculture Monitor", "a Clothing Recommender", "a Flight Tracker", "a Outdoor Activity Guide"],
-  "NASA APOD": ["an Astronomy Gallery", "a Space Wallpaper App", "an Educational Tool", "a Daily Space Fact", "a Cosmos Explorer", "a Star Map", "a Universe Trivia", "a Visual Storyteller"],
-  "REST Countries": ["a Country Guide", "a Flag Quiz", "a Travel Visualizer", "a Currency Converter", "a Geography Learning Tool", "a Population Visualizer", "a Language Map", "a Capital City Game"],
-  "Random User Generator": ["a User Directory Mockup", "a Contact List", "a Profile Card Generator", "a Social Network Prototype", "a Employee Roster", "a Test Data Seeder", "a Avatar Gallery", "a Identity Generator"],
-  "The Dog API": ["a Breed Explorer", "a Dog Gallery", "an Adoption Matcher", "a Puppy Finder", "a Random Dog Generator", "a Canine Encyclopedia", "a Dog Quiz", "a Pet Care Guide"],
-  "Cat Facts": ["a Daily Cat Fact", "a Cat Trivia Game", "a Feline Encyclopedia", "a Random Fact Widget", "a Cat Lover's App", "an Educational Quiz", "a Fact Sharer", "a Meow Messenger"],
-  "JSONPlaceholder": ["a Blog Prototype", "a Comment System", "a Photo Album", "a User Dashboard", "a Todo List Demo", "a Post Feed", "a API Testing Tool", "a Frontend Mockup"],
-  "TMDB": ["a Movie Recommender", "a TV Show Tracker", "an Actor Database", "a Cinema Guide", "a Watchlist Manager", "a Rating System", "a Trailer Viewer", "a Genre Explorer"],
-  "CoinGecko": ["a Crypto Tracker", "a Portfolio Manager", "a Price Alert System", "a Market Visualizer", "a Coin Converter", "a Trading Simulator", "a Blockchain Explorer", "a Historical Data Viewer"]
+  "JavaScript": ["Interactive Dashboard", "Browser Game", "Real-time Chat", "Data Visualization", "Task Manager", "Weather Widget", "Form Validator", "Calculator"],
+  "Python": ["Data Analysis Tool", "Web Scraper", "Automation Script", "Machine Learning Model", "Flask API", "Discord Bot", "Image Processor", "File Organizer"],
+  "Java": ["Android App", "Enterprise System", "Inventory Manager", "Banking System", "Student Record System", "Library Management", "Game Engine", "Desktop Application"],
+  "TypeScript": ["Strictly Typed API", "Large Scale App", "React Component Library", "Next.js Dashboard", "Node.js Backend", "Type-Safe Form", "Refactoring Tool", "CLI Tool"],
+  "C++": ["Game Engine", "System Monitor", "Embedded System", "High-Performance Solver", "Graphics Renderer", "Audio Processor", "Physics Engine", "Operating System Kernel"],
+  "PostgreSQL": ["User Database", "Financial Ledger", "Inventory Catalog", "Employee Directory", "Analytics Store", "Geospatial Data", "Relational Schema", "Transaction Log"],
+  "MongoDB": ["Content Management System", "Social Media Feed", "Product Catalog", "User Profiles", "IoT Data Store", "Real-time Analytics", "Mobile App Backend", "Logging System"],
+  "MySQL": ["eCommerce Platform", "WordPress Plugin", "Forum Database", "Customer CRM", "Booking System", "School Management", "Blog Backend", "Ticket System"],
+  "SQLite": ["Local Cache", "Mobile App Storage", "Embedded Device DB", "Configuration Store", "Browser Extension Data", "Testing Database", "Personal Diary", "To-Do List"],
+  "Firebase": ["Real-time Chat", "Live Leaderboard", "User Authentication", "Push Notifications", "Serverless Function", "Mobile Backend", "Collaborative Editor", "Social Feed"],
+  "PokeAPI": ["Pokedex", "Battle Simulator", "Team Builder", "Pokemon Guessing Game", "Type Calculator", "Evolution Chart", "Move Dex", "Berry Guide"],
+  "OpenWeatherMap": ["Weather Dashboard", "Forecast App", "Travel Planner", "Event Scheduler", "Agriculture Monitor", "Clothing Recommender", "Flight Tracker", "Outdoor Activity Guide"],
+  "NASA APOD": ["Astronomy Gallery", "Space Wallpaper App", "Educational Tool", "Daily Space Fact", "Cosmos Explorer", "Star Map", "Universe Trivia", "Visual Storyteller"],
+  "REST Countries": ["Country Guide", "Flag Quiz", "Travel Visualizer", "Currency Converter", "Geography Learning Tool", "Population Visualizer", "Language Map", "Capital City Game"],
+  "Random User Generator": ["User Directory Mockup", "Contact List", "Profile Card Generator", "Social Network Prototype", "Employee Roster", "Test Data Seeder", "Avatar Gallery", "Identity Generator"],
+  "The Dog API": ["Breed Explorer", "Dog Gallery", "Adoption Matcher", "Puppy Finder", "Random Dog Generator", "Canine Encyclopedia", "Dog Quiz", "Pet Care Guide"],
+  "Cat Facts": ["Daily Cat Fact", "Cat Trivia Game", "Feline Encyclopedia", "Random Fact Widget", "Cat Lover's App", "Educational Quiz", "Fact Sharer", "Meow Messenger"],
+  "JSONPlaceholder": ["Blog Prototype", "Comment System", "Photo Album", "User Dashboard", "Todo List Demo", "Post Feed", "API Testing Tool", "Frontend Mockup"],
+  "TMDB": ["Movie Recommender", "TV Show Tracker", "Actor Database", "Cinema Guide", "Watchlist Manager", "Rating System", "Trailer Viewer", "Genre Explorer"],
+  "CoinGecko": ["Crypto Tracker", "Portfolio Manager", "Price Alert System", "Market Visualizer", "Coin Converter", "Trading Simulator", "Blockchain Explorer", "Historical Data Viewer"]
 };
 
 const technologyIdeas = {
